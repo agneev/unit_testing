@@ -23,7 +23,7 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity>{
             String tester = textView.getText().toString();
 
             assertNotNull(mainActivity);
-            assertEquals("Bye World!", tester);
+            assertEquals("Hello World!", tester);
         }
     }
 
