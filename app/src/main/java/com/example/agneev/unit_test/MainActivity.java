@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
     {
         Button button = (Button) findViewById(R.id.button);
         TextView tv = (TextView)findViewById(R.id.tv1);
-        tv.setText("BYE");
+        EditText ed = (EditText) findViewById(R.id.editText);
+        EditText ed2 = (EditText) findViewById(R.id.editText2);
+        int a = Integer.parseInt(ed.getText().toString());
+        int b = Integer.parseInt(ed2.getText().toString());
+        int s = sum(a,b);
+        tv.setText(String.valueOf(s));
     }
     public int sum(int a, int b)
     {
