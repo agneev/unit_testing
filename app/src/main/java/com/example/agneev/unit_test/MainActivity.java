@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void buttonOnClick(View v)
+    {
+        Button button = (Button) findViewById(R.id.button);
+        TextView tv = (TextView)findViewById(R.id.tv1);
+        tv.setText("BYE");
+    }
+    public int sum(int a, int b)
+    {
+        return a+b;
     }
 
     @Override
